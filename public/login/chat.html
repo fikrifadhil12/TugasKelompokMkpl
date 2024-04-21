@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Screen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .chat-header img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        
+        .chat-header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        
+        .chat-body {
+            flex: 1;
+            overflow-y: scroll;
+            padding: 10px;
+        }
+        
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #eee;
+        }
+        
+        .chat-message.sent {
+            background-color: #ddd;
+            text-align: right;
+        }
+        
+        .chat-message p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="https://picsum.photos/200/300" alt="Avatar">
+            <h1>WEHELP + • Elizabeth Nelson</h1>
+            <span>Search Here</span>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>Richards Hendrics: Sup man, Wanna go out?</p>
+            </div>
+            <div class="chat-message sent">
+                <p>Elezabeth Nelson: are you sure The isn't overdoing it?</p>
+            </div>
+            <div class="chat-message">
+                <p>Jared Dunn: Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </div>
+            <div class="chat-message sent">
+                <p>I can't wait to hear All about the...</p>
+            </div>
+            <div class="chat-message">
+                <p>Gilfoyle: It's It's nothing just my imagi</p>
+            </div>
+            <div class="chat-message">
+                <p>Dinesh: Typing</p>
+            </div>
+            <div class="chat-message sent">
+                <p>Big Head: Lorem ipsum dolor sit amet, consectetur adiphicing elit, sod do elkusmod tempor incididunt ut</p>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Type your message here...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+
+</html>
