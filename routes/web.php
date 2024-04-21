@@ -18,7 +18,7 @@ use App\Http\Controllers\menuController;
 |
 */
 
-
+// test
 
 Route::get('/logiin', [loginController::class, 'login'])->name('login');
 Route::post('/login-user', [loginController::class, 'loginUser'])->name('login-user');
